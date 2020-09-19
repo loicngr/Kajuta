@@ -1,0 +1,266 @@
+/**
+    Importation des polices d'écritures
+ */
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("../font/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../font/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("../font/Montserrat-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Montserrat Italic";
+    src: url("../font/Montserrat-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("../font/Montserrat-Medium.ttf") format("truetype");
+}
+
+/**
+    Création des variables principal dans l'élément root
+ */
+:root {
+    --color-green: #7BED9F;
+    --color-blue-light: #70A1FF;
+    --color-blue: #5352ED;
+    --color-white: #FFFFFF;
+    --color-silver: #DFE4EA;
+    --color-gray: #9F9F9F;
+
+    --color-outline-white: var(--color-white);
+}
+
+html {
+    scroll-behavior: smooth;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/**
+    Kajuta - Classes Polices d'écriture
+ */
+.kajuta-font-bold {
+    font-family: "Montserrat Bold", sans-serif;
+}
+.kajuta-font-regular {
+    font-family: "Montserrat Regular", sans-serif;
+}
+.kajuta-font-light {
+    font-family: "Montserrat Light", sans-serif;
+}
+.kajuta-font-italic {
+    font-family: "Montserrat Italic", sans-serif;
+}
+
+/**
+    Kajuta - Classes couleurs
+ */
+
+/* Background */
+.kajuta-bg {
+    background: -o-linear-gradient(215.42deg, #5352ED 0%, #70A1FF 48.44%, #7BED9F 100%);
+    background: linear-gradient(234.58deg, #5352ED 0%, #70A1FF 48.44%, #7BED9F 100%);
+}
+.kajuta-bg-green {
+    background-color: var(--color-green);
+}
+.kajuta-bg-blue-light {
+    background-color: var(--color-blue-light);
+}
+.kajuta-bg-blue {
+    background-color: var(--color-blue);
+}
+.kajuta-bg-white {
+    background-color: var(--color-white);
+}
+.kajuta-bg-silver {
+    background-color: var(--color-silver);
+}
+.kajuta-bg-gray {
+    background-color: var(--color-gray);
+}
+.kajuta-border-white {
+    border: 1px solid var(--color-outline-white);
+}
+/* Couleur du texte */
+.kajuta-color-green {
+    color: var(--color-green);
+}
+.kajuta-color-blue-light {
+    color: var(--color-blue-light);
+}
+.kajuta-color-blue {
+    color: var(--color-blue);
+}
+.kajuta-color-white {
+    color: var(--color-white);
+}
+.kajuta-color-silver {
+    color: var(--color-silver);
+}
+.kajuta-color-gray {
+    color: var(--color-gray);
+}
+
+/**
+    Kajuta - Classes taille
+ */
+.kajuta-display-7 {
+    font-size: 2rem;
+}
+.kajuta-display-8 {
+    font-size: 1.7rem;
+}
+.kajuta-display-9 {
+    font-size: 1.25rem;
+}
+.kajuta-display-10 {
+    font-size: 1rem;
+}
+.kajuta-mb-7 {
+    margin-bottom: 4rem !important;
+}
+.kajuta-maxw-400 {
+    max-width: 400px !important;
+}
+
+/**
+    Kajuta - Classes hauteur
+ */
+.hv-100 {
+    height: 100vh;
+}
+
+/**
+    Kajuta - Sections
+ */
+main section h3::after {
+    width: 100%;
+    height: 1px;
+
+    content: " ";
+    display: block;
+    margin: 20px 0;
+    background-color: var(--color-gray);
+    opacity: .5;
+}
+main section p {
+    max-width: 700px;
+}
+main section img {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+/**
+    Kajuta - Footer
+ */
+footer h3 {
+    min-width: 200px;
+}
+footer h3::after {
+    max-width: 250px;
+    width: 100%;
+    height: 1px;
+
+    content: " ";
+    display: block;
+    margin: 20px 0;
+    background-color: var(--color-gray);
+}
+footer p {
+    max-width: 700px;
+}
+
+/**
+    Kajuta - Parallax
+    Ajoute un effet de scroll sur l'image de fond
+ */
+.kajuta-parallax {
+    width: 100%;
+    height: 500px;
+
+    background-image: url("../img/bird_house_01.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-color: white;
+    opacity: .8;
+}
+
+/**
+    Kajuta - Bouton
+ */
+button.kajuta-color-white:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+button.kajuta-color-white:hover {
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: var(--color-silver);
+}
+
+
+/**
+    Kajuta - ThreeJs
+ */
+.kajuta-slider-container {
+    width: 100%;
+    height: auto;
+}
+
+/**
+    Kajuta - Séparateur
+ */
+.separator {
+    height: 2px;
+    width: 100%;
+
+    background-color: gray;
+    opacity: .5;
+}
+
+/**
+    Kajuta - Classes responsive
+ */
+@media (max-width: 1920px) {
+    .kajuta-parallax {
+        background-image: url("../img/bird_house_01-normal.jpg");
+    }
+}
+@media (max-width: 720px) {
+    .kajuta-parallax {
+        background-image: url("../img/bird_house_01-small.jpg");
+    }
+}
+@media (max-width: 600px) {
+    .kajuta-flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        width: 100%;
+    }
+}
